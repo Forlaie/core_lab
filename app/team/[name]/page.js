@@ -1,7 +1,7 @@
 import React from 'react'
 import publications from '../../../data/publications.json';
 
-const page = ({params}) => {
+export default function Name({params}) {
   const { name } = params;
 
   const authorPublications = publications.filter(pub =>
@@ -20,5 +20,3 @@ const page = ({params}) => {
     </div>
   );
 }
-
-export default page

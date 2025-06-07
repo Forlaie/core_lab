@@ -1,7 +1,7 @@
 import React from 'react'
 import publications from '../../data/publications.json'
 
-const page = () => {
+export default function Publications() {
   return (
     <div>
       <h1>All Publications</h1>
@@ -13,7 +13,5 @@ const page = () => {
         ))}
       </ul>
     </div>
-  )
+  );
 }
-
-export default page
