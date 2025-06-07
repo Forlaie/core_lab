@@ -18,14 +18,14 @@ const Artwork = () => {
 
     const slideForward = ()=>{
         if (tx > -50){
-            tx -= 25;
+            tx -= 20;
         }
         slider.current.style.transform = `translateX(${tx}%)`;
     }
 
     const slideBackward = ()=>{
         if (tx < 0){
-            tx += 25;
+            tx += 20;
         }
         slider.current.style.transform = `translateX(${tx}%)`
     }
@@ -46,7 +46,10 @@ const Artwork = () => {
                             <h3>Artist: Jess</h3>
                         </div>
                     </div>
-                    <p>Michael's namecard decorated! <br/> Shoutout to Michael for introducting me to research, definitely changed my uni experience for the better &gt;:)</p>
+                    <p>
+                        Michael's namecard decorated!<br/>
+                        Shoutout to Michael for introducting me to research, definitely changed my uni experience for the better &gt;:)
+                    </p>
                 </div>
             </li>
             <li>
@@ -57,7 +60,10 @@ const Artwork = () => {
                             <h3>Artist: Jess</h3>
                         </div>
                     </div>
-                    <p>Andrew's namecard decorated!<br/> This is the first namecard I drew on, shoutout to Andrew the goat for letting his office be my canvas :P</p>
+                    <p>
+                        Andrew's namecard decorated!<br/>
+                        This is the first namecard I drew on, shoutout to Andrew the goat for letting his office be my canvas :P
+                    </p>
                 </div>
             </li>
             <li>
@@ -65,13 +71,14 @@ const Artwork = () => {
                     <div className="art-info">
                         <Image src={whiteboard} alt="" />
                         <div>
-                            <h3>William Jackson 3</h3>
+                            <h3>Artist: Jess</h3>
                         </div>
                     </div>
-                    <p>Choosing to pursue my degree at Edusity was one of
-                        the best decisions I've ever made. The supportive
-                        ommunity, state-of-the-art facilities, and commitment
-                        to academic excellence have truly exceeded my expectations.</p>
+                    <p>
+                        My magnum opus.<br/>
+                        This is the culmination of ~2 years worth of office hours, starting from the second half of CSC148, all the way through CSC258 and CSC209.<br/>
+                        The goal is to keep adding on to this whiteboard throughout my university life :D
+                    </p>
                 </div>
             </li>
             <li>
@@ -79,13 +86,28 @@ const Artwork = () => {
                     <div className="art-info">
                         <Image src={door} alt="" />
                         <div>
-                            <h3>William Jackson 4</h3>
+                            <h3>Artist: Jess</h3>
                         </div>
                     </div>
-                    <p>Choosing to pursue my degree at Edusity was one of
-                        the best decisions I've ever made. The supportive
-                        ommunity, state-of-the-art facilities, and commitment
-                        to academic excellence have truly exceeded my expectations.</p>
+                    <p>
+                        End of year party at Andrew's office!!!<br/>
+                        Thank god 209 is over...
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div className="slide">
+                    <div className="art-info">
+                        <Image src={window} alt="" />
+                        <div>
+                            <h3>Artist: Jess</h3>
+                        </div>
+                    </div>
+                    <p>
+                        Tetris!!!<br/>
+                        I <i>was</i> gonna make a computer and cut out alphabet letters so that you could write messages on the window, but then saw this Tetris thing and thought it would be more fun instead<br/>
+                        (Also easier to make, because I don't need to cut out a bunch of alphabet letters)
+                    </p>
                 </div>
             </li>
         </ul>

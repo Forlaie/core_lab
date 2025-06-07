@@ -1,7 +1,7 @@
 .next-btn, .back-btn{
     position: absolute;
     top: 50%;
-    right: 50px;
+    right: 160px;
     transform: translateY(-50%);
     padding: 15px;
     width: 50px;
@@ -11,21 +11,24 @@
 }
 .back-btn{
     right: auto;
-    left: 50px;
+    left: 160px;
 }
 
 .slider{
     overflow: hidden;
+    width: 1000px;
+    margin: auto;
 }
 .slider ul{
     display: flex;
-    width: 200%;
+    width: max-content;
     overflow-x: hidden;
     transition: 0.5s;
 }
 .slider ul li{
     list-style: none;
-    width: 50%;
+    width: 500px;
+    flex-shrink: 0;
     padding: 20px;
 }
 .slide{
@@ -34,6 +37,7 @@
     border-radius: 10px;
     color: #676767;
     line-height: 1.4;
+    height: 550px;
 }
 .slide img{
     height: 300px;
