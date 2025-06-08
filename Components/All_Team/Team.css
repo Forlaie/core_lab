@@ -59,3 +59,15 @@
     flex-wrap: wrap;
     align-items: stretch;
 }
+
+/* Sidebar */
+.bar{
+    color: #06264c;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f1f2f3;
+    cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
