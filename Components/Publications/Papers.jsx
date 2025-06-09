@@ -5,7 +5,7 @@ const Papers = () => {
   return (
     <section className='px-30 py-10 mx-auto'>
         <h1 className='text-2xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3]'>All Publications</h1>
-        <ul>
+        <ul className='pt-5'>
         {publications.map((pub, index) => (
             <li key={pub.doi || index} className="mb-2">
             {Array.isArray(pub.author) ? pub.author.join(', ') : pub.author}.
