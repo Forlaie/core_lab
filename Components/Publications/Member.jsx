@@ -1,7 +1,7 @@
 import React from 'react'
 import publications from '../../data/publications.json';
+import bio from '../../data/bios.js'; 
 import Image from 'next/image';
-import generic from '../../Assets/generic.png'
 
 const Member = ({member}) => {
     const parts = (member || '').split('_');
@@ -23,23 +23,39 @@ const Member = ({member}) => {
       const authors = Array.isArray(pub.author) ? pub.author : [pub.author];
       return authors.some(a => normalize(a) === fullName.toLowerCase());
     });
+
+    // Find the member whose name matches fullName
+    const person = bio.find(m => m.name === fullName);
+
+    if (!person) {
+        return <p>Member not found.</p>;
+    }
   
     return (
       <section className='px-30 py-10 mx-auto'>
-        <h1 className='text-2xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3]'>{fullName}</h1>
+        <h1 className='text-2xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3]'>
+            {person.name}
+        </h1>
         <div className='pt-3 flex'>
-            <Image src={generic} alt="" className='w-[20%]'/>
+            {/* If you use next/image, adjust accordingly */}
+            <Image src={person.image} alt={person.name} className='w-[20%] pb-5'/>
             <div className='pl-5 text-[#0b3a72]'>
-                <p>
-                    Naaz is a PHD student and she is very cool :D<br/>
-                    This is her{' '}
-                    <a href="https://www.naazsibia.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                        website
-                    </a>
-                    .
+                <p className='pb-5'>
+                    {person.bio}
                 </p>
+                <a
+                href={person.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+                >
+                Website
+                </a>
             </div>
         </div>
+        <h1 className='text-xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3]'>
+            Publications
+        </h1>
         <ul className='pt-5'>
           {authorPublications.map((pub, index) => (
             <li key={pub.doi || index} className="mb-2">
