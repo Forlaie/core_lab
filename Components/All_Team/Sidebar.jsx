@@ -3,8 +3,8 @@ import './Team.css'
 
 const Sidebar = () => {
   return (
-    <div className='pl-30 py-5 pr-5 sticky top-20 w-[30%] z-20 bg-white'>
-        <div className='flex flex-col space-y-4'>
+    <div className='pl-30 py-5 pr-5 w-[30%]'>
+        <div className='flex flex-col space-y-4 sticky top-26 bg-white z-20'>
             <a href="#professor" className='bar'>
                 Professors
             </a>
