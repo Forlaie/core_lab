@@ -1,9 +1,11 @@
-import React from 'react'
+import Active from '@/Components/All_Projects/Active';
+import Past from '@/Components/All_Projects/Past';
 
 export default function Projects() {
   return (
     <div>
-      <h1>Our Projects</h1>
+      <Active/>
+      <Past/>
     </div>
   );
 }
