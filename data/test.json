@@ -1,0 +1,74 @@
+[
+    {
+        "series": "SIGCSE 2024",
+        "location": "Portland, OR, USA",
+        "keywords": "academic dishonesty, academic integrity, assessment, cheating, computer science students, computing students, education",
+        "numpages": "7",
+        "pages": "757\u00e2\u20ac\u201c763",
+        "booktitle": "Proceedings of the 55th ACM Technical Symposium on Computer Science Education V. 1",
+        "abstract": "In contrast with studies that have identified why students commit academic offences, many educators are familiar with the excuse that an accused student did not know the behavior counted as dishonest. Given the variations in policy and the ways collaboration and code sharing occur in professional and hobbyist spaces, this might be plausible. Mismatches between students' conceptions of academic honesty and course policy can have major consequences, from being kicked out of programs to being too nervous to study with peers. In this work, we investigate what students understand about academic integrity in computer science courses and if there are differences based on university, country, demographic, or online versus in-person courses. We present a study that surveys undergraduate computer science students (N = 1,011) at three universities (Australia, Canada, and the United States of America). The results show that all three institutions take academic integrity seriously, and their students are aware of its importance, but confusion on what is covered under the policies is common. Interestingly, the results also show that course instructors play a huge role as to what students perceive to be a violation of the academic integrity policy at their institution. By understanding student's perspectives on academic integrity, educators can better develop policies and practices that reduce inadvertent and mistaken violations of academic integrity policies.",
+        "doi": "10.1145/3626252.3630753",
+        "url": "https://doi-org.myaccess.library.utoronto.ca/10.1145/3626252.3630753",
+        "address": "New York, NY, USA",
+        "publisher": "Association for Computing Machinery",
+        "isbn": "9798400704239",
+        "year": "2024",
+        "title": "\"I Didn't Know\": Examining Student Understanding of Academic Dishonesty in Computer Science",
+        "author": [
+            "Liut, Michael",
+            "Ly, Anna",
+            "Xu, Jessica Jia-Ni",
+            "Banson, Justice",
+            "Vrbik, Paul",
+            "Hardin, Caroline D."
+        ],
+        "ENTRYTYPE": "inproceedings",
+        "ID": "10.1145/3626252.3630753"
+    },
+    {
+        "series": "Koli Calling '24",
+        "location": "",
+        "keywords": "Visualization, Prior Programming Experience, Sketching, Mental Models, Computing Education",
+        "numpages": "2",
+        "articleno": "34",
+        "booktitle": "Proceedings of the 24th Koli Calling International Conference on Computing Education Research",
+        "abstract": "This research explores the challenges novice students face in un- derstanding and tracing programs, particularly when lacking prior programming experience. Novices often struggle with ineffective tracing strategies and developing accurate mental models, which are crucial for advancing in programming. While visualization and sketching have been proposed as methods to improve these skills, their effectiveness remains mixed. In my Ph.D. I propose studying investigating the potential of interactive visualizations and sketching, grounded in multiple representations theory, to enhance learner engagement, reduce cognitive load, and support various levels of program comprehension. By examining how these tools can be integrated into programming education, particularly through formats that range from analogies to concrete code representations, this work aims to offer practical guidelines to make programming more accessible and intuitive, thereby addressing a critical gap in computing education",
+        "doi": "10.1145/3699538.3699572",
+        "url": "https://doi-org.myaccess.library.utoronto.ca/10.1145/3699538.3699572",
+        "address": "New York, NY, USA",
+        "publisher": "Association for Computing Machinery",
+        "isbn": "9798400710384",
+        "year": "2024",
+        "title": "Enhancing Novice Programmers? Understanding through Interactive Visualizations and Multiple Representations",
+        "author": [
+            "Sibia, Naaz"
+        ],
+        "ENTRYTYPE": "inproceedings",
+        "ID": "10.1145/3699538.3699572"
+    },
+    {
+        "series": "ITiCSE 2024",
+        "location": "Milan, Italy",
+        "keywords": "computer science education, curriculum, technical writing skills, wac, wid, written communication, wtl",
+        "numpages": "7",
+        "pages": "332\u00e2\u20ac\u201c338",
+        "booktitle": "Proceedings of the 2024 on Innovation and Technology in Computer Science Education V. 1",
+        "abstract": "Faculty and industry practitioners recognize written communication to be important in computer science, but it can be challenging to convince students of the same. As student perceptions are molded early in a program of study, we focus on early-year CS students to understand their perceptions towards the importance of writing in CS, with the goal of framing discipline-specific writing pedagogy. We qualitatively analyze responses from first and second-year CS students in a survey about the role of writing in their field. The responses reveal that a majority view writing as an indispensable skill. Specifically, students recognize it as a fundamental skill, applicable across diverse contexts, and uniquely relevant in CS compared to other fields. We identified 4 perceptions that they hold which are helpful to their development as writers: that writing is a useful fundamental skill, which is useful for achieving various goals in a variety of contexts, and that writing in CS is different than in other fields. However, 20\\% of responses include reasons why writing is not important in CS, and we identify 4 perceptions harmful to students' development as writers: that writing skills can be avoided, are defined narrowly, do not need to be developed beyond a baseline, and come at the cost of computing skills. We believe that there is an opportunity to align discipline-specific writing instruction with these useful and harmful perceptions.",
+        "doi": "10.1145/3649217.3653576",
+        "url": "https://doi-org.myaccess.library.utoronto.ca/10.1145/3649217.3653576",
+        "address": "New York, NY, USA",
+        "publisher": "Association for Computing Machinery",
+        "isbn": "9798400706004",
+        "year": "2024",
+        "title": "Early Computer Science Students' Perspectives Towards The Importance Of Writing",
+        "author": [
+            "Engineer, Rutwa",
+            "Sibia, Naaz",
+            "Kaler, Michael",
+            "Simion, Bogdan",
+            "Zhang, Lisa"
+        ],
+        "ENTRYTYPE": "inproceedings",
+        "ID": "10.1145/3649217.3653576"
+    }
+]

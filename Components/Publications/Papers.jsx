@@ -1,5 +1,5 @@
 import React from 'react'
-import publications from '../../data/publications.json'
+import publications from '../../data/test.json'
 
 const Papers = () => {
   return (
