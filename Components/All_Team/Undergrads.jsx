@@ -28,7 +28,7 @@ const Undergrads = () => {
             <Image src={generic} alt=""/>
             <div className="member-info">
               <h4>Amber</h4>
-              <p>The crotcher</p>
+              <p>The crocheter</p>
             </div>
         </div>
       </div>

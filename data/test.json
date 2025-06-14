@@ -15,12 +15,12 @@
         "year": "2024",
         "title": "\"I Didn't Know\": Examining Student Understanding of Academic Dishonesty in Computer Science",
         "author": [
-            "Liut, Michael",
-            "Ly, Anna",
-            "Xu, Jessica Jia-Ni",
-            "Banson, Justice",
-            "Vrbik, Paul",
-            "Hardin, Caroline D."
+            "Michael Liut",
+            "Anna Ly",
+            "Jessica Jia-Ni Xu",
+            "Justice Banson",
+            "Paul Vrbik",
+            "Caroline D. Hardin"
         ],
         "ENTRYTYPE": "inproceedings",
         "ID": "10.1145/3626252.3630753"
@@ -41,7 +41,7 @@
         "year": "2024",
         "title": "Enhancing Novice Programmers? Understanding through Interactive Visualizations and Multiple Representations",
         "author": [
-            "Sibia, Naaz"
+            "Naaz Sibia"
         ],
         "ENTRYTYPE": "inproceedings",
         "ID": "10.1145/3699538.3699572"
@@ -62,11 +62,11 @@
         "year": "2024",
         "title": "Early Computer Science Students' Perspectives Towards The Importance Of Writing",
         "author": [
-            "Engineer, Rutwa",
-            "Sibia, Naaz",
-            "Kaler, Michael",
-            "Simion, Bogdan",
-            "Zhang, Lisa"
+            "Rutwa Engineer",
+            "Naaz Sibia",
+            "Michael Kaler",
+            "Bogdan Simion",
+            "Lisa Zhang"
         ],
         "ENTRYTYPE": "inproceedings",
         "ID": "10.1145/3649217.3653576"
