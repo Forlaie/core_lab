@@ -2,7 +2,7 @@ import bibtexparser
 import json
 
 # Load the .bib file
-with open("test.bib") as bibtex_file:
+with open("papers.bib", encoding="utf-8") as bibtex_file:
     bib_database = bibtexparser.load(bibtex_file)
 
 # Process entries to split authors
@@ -22,6 +22,15 @@ for entry in bib_database.entries:
         
         entry['author'] = authors
 
+# Sort entries by year, most recent first
+def get_year(entry):
+    try:
+        return int(entry.get('year', 0))
+    except ValueError:
+        return 0
+
+bib_database.entries = sorted(bib_database.entries, key=get_year, reverse=True)
+
 # Write the modified entries to a .json file
-with open("test.json", "w") as json_file:
+with open("papers.json", "w") as json_file:
     json.dump(bib_database.entries, json_file, indent=4)

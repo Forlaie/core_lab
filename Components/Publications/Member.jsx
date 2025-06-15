@@ -1,5 +1,5 @@
 import React from 'react'
-import publications from '../../data/test.json';
+import publications from '../../data/papers.json';
 import bio from '../../data/bios.js'; 
 import Image from 'next/image';
 
@@ -10,21 +10,11 @@ const Member = ({member}) => {
       .map(part => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
       .join(' ');
   
-    // If it's "Last, First", convert to "First Last"
-    const normalize = name => {
-      if (name.includes(',')) {
-        const [last, first] = name.split(',').map(s => s.trim());
-        return `${first} ${last}`.toLowerCase();
-      }
-      return name.toLowerCase();
-    };
-  
     const authorPublications = publications.filter(pub => {
       const authors = Array.isArray(pub.author) ? pub.author : [pub.author];
-      return authors.some(a => normalize(a) === fullName.toLowerCase());
+      return authors.some(a => a.toLowerCase() === fullName.toLowerCase());
     });
 
-    // Find the member whose name matches fullName
     const person = bio.find(m => m.name === fullName);
 
     if (!person) {
@@ -37,7 +27,6 @@ const Member = ({member}) => {
             {person.name}
         </h1>
         <div className='pt-3 flex'>
-            {/* If you use next/image, adjust accordingly */}
             <Image src={person.image} alt={person.name} className='w-[20%] pb-5'/>
             <div className='pl-5 text-[#0b3a72]'>
                 <p className='pb-5'>

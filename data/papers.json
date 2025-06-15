@@ -1,10 +1,33 @@
 [
     {
+        "series": "CHI EA '25",
+        "location": "",
+        "keywords": "HCI design goals, design goals, technology evaluation, human-centered design, human-centered computing, human-centered AI, humanistic design, lifelong learning",
+        "numpages": "7",
+        "articleno": "595",
+        "booktitle": "Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems",
+        "abstract": "What if everyday technologies were designed for productivity and learning? This is critical in the era of generative artificial intelligence and pervasive digital technologies, where technology design substantially shapes what and how humans are learning. This paper introduces \u201csupport for learning\u201d as an explicit design goal for everyday technologies. To provide background, we first differentiate four relationships between learning and technology: (1) learning to use technology, (2) learning about technology, (3) learning as a primary design goal, and (4) learning through technology. Designers can intentionally facilitate the latter (a) by following established design principles for usability and user experience, but need to go beyond such known ground by (b) identifying potential learning goals, and (c) connecting to high-quality learning resources and technology designed from within the system. A future research agenda should investigate the relationships between patterns of technology design, patterns of technology use, and learning.",
+        "doi": "10.1145/3706599.3719804",
+        "url": "https://doi-org.myaccess.library.utoronto.ca/10.1145/3706599.3719804",
+        "address": "New York, NY, USA",
+        "publisher": "Association for Computing Machinery",
+        "isbn": "9798400713958",
+        "year": "2025",
+        "title": "What if (Everyday) Technologies were Designed for Learning? Towards \"Support for Learning\" as a Design Goal for Every(day) Technology",
+        "author": [
+            "Viktoria Pammer-Schindler",
+            "Michael Liut",
+            "Tobias Ley"
+        ],
+        "ENTRYTYPE": "inproceedings",
+        "ID": "10.1145/3706599.3719804"
+    },
+    {
         "series": "SIGCSE 2024",
         "location": "Portland, OR, USA",
         "keywords": "academic dishonesty, academic integrity, assessment, cheating, computer science students, computing students, education",
         "numpages": "7",
-        "pages": "757\u00e2\u20ac\u201c763",
+        "pages": "757\u2013763",
         "booktitle": "Proceedings of the 55th ACM Technical Symposium on Computer Science Education V. 1",
         "abstract": "In contrast with studies that have identified why students commit academic offences, many educators are familiar with the excuse that an accused student did not know the behavior counted as dishonest. Given the variations in policy and the ways collaboration and code sharing occur in professional and hobbyist spaces, this might be plausible. Mismatches between students' conceptions of academic honesty and course policy can have major consequences, from being kicked out of programs to being too nervous to study with peers. In this work, we investigate what students understand about academic integrity in computer science courses and if there are differences based on university, country, demographic, or online versus in-person courses. We present a study that surveys undergraduate computer science students (N = 1,011) at three universities (Australia, Canada, and the United States of America). The results show that all three institutions take academic integrity seriously, and their students are aware of its importance, but confusion on what is covered under the policies is common. Interestingly, the results also show that course instructors play a huge role as to what students perceive to be a violation of the academic integrity policy at their institution. By understanding student's perspectives on academic integrity, educators can better develop policies and practices that reduce inadvertent and mistaken violations of academic integrity policies.",
         "doi": "10.1145/3626252.3630753",
@@ -51,7 +74,7 @@
         "location": "Milan, Italy",
         "keywords": "computer science education, curriculum, technical writing skills, wac, wid, written communication, wtl",
         "numpages": "7",
-        "pages": "332\u00e2\u20ac\u201c338",
+        "pages": "332\u2013338",
         "booktitle": "Proceedings of the 2024 on Innovation and Technology in Computer Science Education V. 1",
         "abstract": "Faculty and industry practitioners recognize written communication to be important in computer science, but it can be challenging to convince students of the same. As student perceptions are molded early in a program of study, we focus on early-year CS students to understand their perceptions towards the importance of writing in CS, with the goal of framing discipline-specific writing pedagogy. We qualitatively analyze responses from first and second-year CS students in a survey about the role of writing in their field. The responses reveal that a majority view writing as an indispensable skill. Specifically, students recognize it as a fundamental skill, applicable across diverse contexts, and uniquely relevant in CS compared to other fields. We identified 4 perceptions that they hold which are helpful to their development as writers: that writing is a useful fundamental skill, which is useful for achieving various goals in a variety of contexts, and that writing in CS is different than in other fields. However, 20\\% of responses include reasons why writing is not important in CS, and we identify 4 perceptions harmful to students' development as writers: that writing skills can be avoided, are defined narrowly, do not need to be developed beyond a baseline, and come at the cost of computing skills. We believe that there is an opportunity to align discipline-specific writing instruction with these useful and harmful perceptions.",
         "doi": "10.1145/3649217.3653576",
