@@ -1,0 +1,30 @@
+import React from 'react'
+
+const Sidebar = () => {
+  return (
+    <div className='pl-30 py-5 w-[30%]'>
+        <div className='flex flex-col space-y-4 sticky top-26 bg-white z-20'>
+            <a href="#2025" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
+                2025
+            </a>
+            <a href="#2024" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
+                2024
+            </a>
+            <a href="#2023" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
+                2023
+            </a>
+            <a href="#2022" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
+                2022
+            </a>
+            <a href="#2021" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
+                2021
+            </a>
+            <a href="#2020" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
+                2020
+            </a>
+        </div>
+    </div>
+  )
+}
+
+export default Sidebar

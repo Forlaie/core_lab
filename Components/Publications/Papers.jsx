@@ -3,11 +3,12 @@
 import React, { useState } from 'react'
 import publications from '../../data/papers.json'
 import SearchBar from './SearchBar'
+import "./Style.css"
 
 const Papers = () => {
   const [query, setQuery] = useState('')
 
-  // Filter first
+  // Filter publications according to search bar
   const filteredPublications = publications.filter(pub => {
     const searchString = `${pub.title} ${pub.author} ${pub.year} ${pub.booktitle || pub.journal || pub.series}`.toLowerCase()
     return searchString.includes(query.toLowerCase())
@@ -27,7 +28,7 @@ const Papers = () => {
   const sortedYears = Object.keys(pubsByYear).sort((a, b) => b.localeCompare(a))
 
   return (
-    <section className="px-30 py-10 mx-auto">
+    <section className="pr-30 pl-5 py-5 mx-auto w-300">
       <h1 className="text-2xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3]">
         All Publications
       </h1>
@@ -40,13 +41,13 @@ const Papers = () => {
         </ul>
       ) : (
         sortedYears.map(year => (
-          <div key={year}>
+          <div key={year} id={year} className="scroll-mt-25">
             <div className="text-[20px] text-[#0a1588] font-semibold border-y border-y-[#0a1588] py-2">
               {year}
             </div>
             <ul className="pt-5">
               {pubsByYear[year].map((pub, index) => (
-                <li key={pub.doi || index} className="mb-2">
+                <li key={pub.doi || index} className="mb-2 py-3">
                   {Array.isArray(pub.author) ? pub.author.join(', ') : pub.author}.
                   <span className="ml-1">
                     <a
