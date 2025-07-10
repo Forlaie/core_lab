@@ -33,7 +33,7 @@ const Artwork = () => {
   return (
     <div className='px-30 py-10 mx-auto relative'>
       <h1 className='text-2xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3]'>Our Artwork :D</h1>
-      <p className='pt-2'>We have a lot of artistic people in this lab! CS goes great with art guys</p>
+      <p className='pt-2'>Not only do we do research, but we also know how to have fun! Here are some of the artworks made by some of the members in our lab.</p>
       <Image src={next_icon} alt="" className='next-btn' onClick={slideForward}/>
       <Image src={back_icon} alt="" className='back-btn' onClick={slideBackward}/>
       <div className="slider">
@@ -47,8 +47,8 @@ const Artwork = () => {
                         </div>
                     </div>
                     <p>
-                        Michael's namecard decorated!<br/>
-                        Shoutout to Michael for introducting me to research, definitely changed my uni experience for the better &gt;:)
+                        Prof Michael's namecard decorated!<br/>
+                        Shoutout to Michael for introducting me to research, it's been a blast ever since &gt;:)
                     </p>
                 </div>
             </li>
@@ -61,8 +61,8 @@ const Artwork = () => {
                         </div>
                     </div>
                     <p>
-                        Andrew's namecard decorated!<br/>
-                        This is the first namecard I drew on, shoutout to Andrew the goat for letting his office be my canvas :P
+                        Prof Andrew's namecard decorated!<br/>
+                        If you ever walk across his door or enter his office, you'll see the absolute masterpiece (mess) I've made there. Thanks for letting your office be my canvas, Andrew :P
                     </p>
                 </div>
             </li>
@@ -76,7 +76,7 @@ const Artwork = () => {
                     </div>
                     <p>
                         My magnum opus.<br/>
-                        This is the culmination of ~2 years worth of office hours, starting from the second half of CSC148, all the way through CSC258 and CSC209.<br/>
+                        This is the culmination of ~2 years worth of office hours, starting from the second half of first year winter semester, all the way through second year.<br/>
                         The goal is to keep adding on to this whiteboard throughout my university life :D
                     </p>
                 </div>
@@ -91,7 +91,7 @@ const Artwork = () => {
                     </div>
                     <p>
                         End of year party at Andrew's office!!!<br/>
-                        Thank god 209 is over...
+                        Do NOT steal the Pokemon cards, we're all watching you...
                     </p>
                 </div>
             </li>

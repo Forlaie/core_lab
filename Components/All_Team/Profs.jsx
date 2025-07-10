@@ -16,49 +16,56 @@ const Profs = () => {
             <Link href="/team/michael_liut"><Image src={ml_name} alt=""/></Link>
             <div className="member-info">
               <Link href="/team/michael_liut"><h4>Michael Liut</h4></Link>
-              <p>The Leader 👑</p>
+              <p>Assistant Professor, Teaching Stream (UTM)</p>
             </div>
         </div>
         <div className="member">
             <Link href="/team/andrew_petersen"><Image src={ap_name} alt=""/></Link>
             <div className="member-info">
               <Link href="/team/andrew_petersen"><h4>Andrew Petersen</h4></Link>
-              <p>Check out his door guys</p>
+              <p>Professor, Teaching Stream (UTM)</p>
             </div>
         </div>
         <div className="member">
             <Link href="/team/lisa_zhang"><Image src={lz_name} alt=""/></Link>
             <div className="member-info">
               <Link href="/team/lisa_zhang"><h4>Lisa Zhang</h4></Link>
-              <p>Has tons of candy</p>
+              <p>Assistant Professor, Teaching Stream (UTM)</p>
             </div>
         </div>
         <div className="member">
             <Link href="/team/bogdan_simion"><Image src={generic} alt=""/></Link>
             <div className="member-info">
               <Link href="/team/bogdan_simion"><h4>Bogdan Simion</h4></Link>
-              <p>Loves dad jokes</p>
-            </div>
-        </div>
-        <div className="member">
-            <Link href="/team/andi_bergen"><Image src={generic} alt=""/></Link>
-            <div className="member-info">
-              <Link href="/team/andi_bergen"><h4>Andi Bergen</h4></Link>
-              <p>Has a box full of stickers</p>
+              <p>Associate Professor, Teaching Stream (UTM)</p>
             </div>
         </div>
         <div className="member">
             <Link href="/team/tingting_zhu"><Image src={generic} alt=""/></Link>
             <div className="member-info">
               <Link href="/team/tingting_zhu"><h4>Tingting Zhu</h4></Link>
-              <p>Geography :0</p>
+              <p>Assistant Professor, Teaching Stream (UTM)</p>
+            </div>
+        </div>
+        <div className="member">
+            <Link href="/team/andi_bergen"><Image src={generic} alt=""/></Link>
+            <div className="member-info">
+              <Link href="/team/andi_bergen"><h4>Andi Bergen</h4></Link>
+              <p>Assistant Professor, Teaching Stream (UTM)</p>
             </div>
         </div>
         <div className="member">
             <Link href="/team/angela_zavaleta_bernuy"><Image src={generic} alt=""/></Link>
             <div className="member-info">
               <Link href="/team/angela_zavaleta_bernuy"><h4>Angela Zavaleta Bernuy</h4></Link>
-              <p>McMaster Prof :D</p>
+              <p>Assistant Professor (McMaster)</p>
+            </div>
+        </div>
+        <div className="member">
+            <Link href="/team/brian_harrington"><Image src={generic} alt=""/></Link>
+            <div className="member-info">
+              <Link href="/team/brian_harrington"><h4>Brian Harrington</h4></Link>
+              <p>Professor, Teaching Stream (UTSC)</p>
             </div>
         </div>
       </div>

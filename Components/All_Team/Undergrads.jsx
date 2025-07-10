@@ -11,24 +11,24 @@ const Undergrads = () => {
       <h1>Undergraduates</h1>
       <div className="team-members">
         <div className="member">
-            <Image src={jw_ug} alt=""/>
+            <Link href="/team/jessica_wen"><Image src={jw_ug} alt=""/></Link>
             <div className="member-info">
-              <h4>Jess</h4>
-              <p>Resident Artist #2</p>
+              <Link href="/team/jessica_wen"><h4>Jessica Wen</h4></Link>
+              <p>Undergraduate Researcher</p>
             </div>
         </div>
         <div className="member">
-            <Image src={generic} alt=""/>
+            <Link href="/team/khushi_malik"><Image src={generic} alt=""/></Link>
             <div className="member-info">
-              <h4>Khushi</h4>
-              <p>The better artist</p>
+              <Link href="/team/khushi_malik"><h4>Khushi Malik</h4></Link>
+              <p>Undergraduate Researcher</p>
             </div>
         </div>
         <div className="member">
-            <Image src={generic} alt=""/>
+            <Link href="/team/amber_richardson"><Image src={generic} alt=""/></Link>
             <div className="member-info">
-              <h4>Amber</h4>
-              <p>The crocheter</p>
+              <Link href="/team/amber_richardson"><h4>Amber Richardson</h4></Link>
+              <p>Undergraduate Researcher</p>
             </div>
         </div>
       </div>

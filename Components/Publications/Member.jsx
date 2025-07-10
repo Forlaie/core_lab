@@ -2,6 +2,9 @@ import React from 'react'
 import publications from '../../data/papers.json';
 import bio from '../../data/bios.js'; 
 import Image from 'next/image';
+import website_icon from '../../Assets/website_icon.png'
+import google_scholar_icon from '../../Assets/google_scholar_icon.png'
+import email_icon from '../../Assets/email_icon.png'
 
 const Member = ({ member }) => {
   const parts = (member || '').split('_');
@@ -44,14 +47,45 @@ const Member = ({ member }) => {
           <p className='pb-5'>
             {person.bio}
           </p>
-          <a
-            href={person.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
-          >
-            Website
-          </a>
+          <div className="flex flex-col items-start space-y-1 pt-3 border-t border-t-[#f1f2f3]">
+            {person.website != "" && (
+              <div className="flex space-x-1 items-center">
+                <Image src={website_icon} alt={person.name} className="w-6" />
+                <a
+                  href={person.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  {person.website}
+                </a>
+              </div>
+            )}
+            {person.email != "" && (
+              <div className="flex space-x-1 items-center">
+                <Image src={email_icon} alt={person.name} className="w-6"/>
+                <a
+                  href={`mailto:${person.email}`}
+                  className="text-blue-600 hover:underline"
+                >
+                  {person.email}
+                </a>
+              </div>
+            )}
+            {person.googlescholar != "" && (
+              <div className="flex space-x-1 items-center">
+                <Image src={google_scholar_icon} alt={person.name} className="w-6"/>
+                <a
+                  href={person.googlescholar}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  Google Scholar
+                </a>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

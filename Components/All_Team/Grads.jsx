@@ -13,7 +13,14 @@ const Grads = () => {
             <Link href="/team/naaz_sibia"><Image src={generic} alt=""/></Link>
             <div className="member-info">
               <Link href="/team/naaz_sibia"><h4>Naaz Sibia</h4></Link>
-              <p>Resident Artist #1</p>
+              <p>Ph.D. Student</p>
+            </div>
+        </div>
+        <div className="member">
+            <Link href="/team/harry_ye"><Image src={generic} alt=""/></Link>
+            <div className="member-info">
+              <Link href="/team/harry_ye"><h4>Harry Ye</h4></Link>
+              <p>Ph.D. Student</p>
             </div>
         </div>
       </div>
