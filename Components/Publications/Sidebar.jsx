@@ -22,6 +22,21 @@ const Sidebar = () => {
             <a href="#2020" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
                 2020
             </a>
+            <a href="#2019" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
+                2019
+            </a>
+            <a href="#2018" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
+                2018
+            </a>
+            <a href="#2017" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
+                2017
+            </a>
+            <a href="#2016" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
+                2016
+            </a>
+            <a href="#2015" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
+                2015
+            </a>
         </div>
     </div>
   )
