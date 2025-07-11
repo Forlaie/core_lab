@@ -1,7 +1,6 @@
 import React from 'react'
 import './Projects.css'
 import Image from 'next/image'
-import project1 from '../../Assets/project1.png'
 
 const Past = () => {
   return (

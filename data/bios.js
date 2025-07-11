@@ -94,7 +94,7 @@ const members = [
     image: genericImg,
     bio: "Khushi is an undergraduate student involved in machine learning and CSE, with experience in self-regulated learning research, regression analysis, and applying ML models across multidisciplinary domains.",
     website: "",
-    googlescholar: "",
+    googlescholar: "https://scholar.google.com/citations?user=o8zvj34AAAAJ&hl=en",
     email: "khushi.malik@mail.utoronto.ca"
   },
   {
@@ -102,7 +102,7 @@ const members = [
     image: genericImg,
     bio: "Amber is an undergraduate student involved with research in computing education, ML education, and first-year writing. They help explore self-regulated learning, student experiences in first year and ML courses, and student experiences using AI in writing.",
     website: "",
-    googlescholar: "",
+    googlescholar: "https://scholar.google.ca/citations?user=nV2mdA0AAAAJ&hl=en",
     email: "amber.richardson@mail.utoronto.ca"
   }
 ];
