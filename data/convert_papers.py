@@ -1,5 +1,6 @@
 import bibtexparser
 import json
+from collections import defaultdict, OrderedDict
 
 # Load the .bib file
 with open("papers.bib", encoding="utf-8") as bibtex_file:
@@ -8,9 +9,8 @@ with open("papers.bib", encoding="utf-8") as bibtex_file:
 # Process entries to split authors
 for entry in bib_database.entries:
     if 'author' in entry:
-        # Split authors by ' and ' (BibTeX uses "and" to separate authors)
         authors = [a.strip() for a in entry['author'].split(' and ')]
-        # Flip "Last, First" to "First Last"
+
         def flip_name(name):
             if ',' in name:
                 last, first = name.split(',', 1)
@@ -18,19 +18,20 @@ for entry in bib_database.entries:
             else:
                 return name.strip()
 
-        authors = [flip_name(a) for a in authors]
-        
-        entry['author'] = authors
+        entry['author'] = [flip_name(a) for a in authors]
 
-# Sort entries by year, most recent first
-def get_year(entry):
-    try:
-        return int(entry.get('year', 0))
-    except ValueError:
-        return 0
+# Group publications by year
+grouped_by_year = defaultdict(list)
 
-bib_database.entries = sorted(bib_database.entries, key=get_year, reverse=True)
+for entry in bib_database.entries:
+    year = entry.get('year', 'Unknown')
+    grouped_by_year[year].append(entry)
 
-# Write the modified entries to a .json file
+# Sort years descending
+grouped_by_year_sorted = OrderedDict(
+    sorted(grouped_by_year.items(), key=lambda x: int(x[0]) if x[0].isdigit() else 0, reverse=True)
+)
+
+# Write to JSON
 with open("papers.json", "w") as json_file:
-    json.dump(bib_database.entries, json_file, indent=4)
+    json.dump(grouped_by_year_sorted, json_file, indent=4)

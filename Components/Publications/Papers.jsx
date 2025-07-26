@@ -1,31 +1,44 @@
 "use client"
 
 import React, { useState } from 'react'
-import publications from '../../data/papers.json'
+import publicationsByYear from '../../data/papers.json'
 import SearchBar from './SearchBar'
 import "./Style.css"
 
 const Papers = () => {
   const [query, setQuery] = useState('')
 
-  // Filter publications according to search bar
-  const filteredPublications = publications.filter(pub => {
+  // Flatten all publications into one list
+  const allPublications = Object.entries(publicationsByYear).flatMap(([year, pubs]) =>
+    pubs.map(pub => ({ ...pub, year }))
+  )
+
+  // Filter publications according to query
+  const filtered = allPublications.filter(pub => {
     const searchString = `${pub.title} ${pub.author} ${pub.year} ${pub.booktitle || pub.journal || pub.series}`.toLowerCase()
     return searchString.includes(query.toLowerCase())
   })
 
-  // Group publications by year
-  const pubsByYear = filteredPublications.reduce((acc, pub) => {
+  // Re-group filtered results by year (preserve order)
+  const groupedFiltered = filtered.reduce((acc, pub) => {
     const year = pub.year || 'Unknown'
-    if (!acc[year]) {
-      acc[year] = []
-    }
+    if (!acc[year]) acc[year] = []
     acc[year].push(pub)
     return acc
   }, {})
 
-  // Get years sorted descending (most recent first)
-  const sortedYears = Object.keys(pubsByYear).sort((a, b) => b.localeCompare(a))
+  // Preserve the original descending order
+  const sortedYears = Object.keys(groupedFiltered)
+  .sort((a, b) => {
+    const aNum = parseInt(a)
+    const bNum = parseInt(b)
+
+    // Place non-numeric years like "Unknown" at the end
+    if (isNaN(aNum)) return 1
+    if (isNaN(bNum)) return -1
+
+    return bNum - aNum // Descending
+  })
 
   return (
     <section className="pr-30 pl-5 py-5 mx-auto w-300">
@@ -35,7 +48,7 @@ const Papers = () => {
 
       <SearchBar query={query} setQuery={setQuery} />
 
-      {filteredPublications.length === 0 ? (
+      {filtered.length === 0 ? (
         <ul className="pt-5">
           <li>No matching publications found.</li>
         </ul>
@@ -46,7 +59,7 @@ const Papers = () => {
               {year}
             </div>
             <ul className="pt-5">
-              {pubsByYear[year].map((pub, index) => (
+              {groupedFiltered[year].map((pub, index) => (
                 <li key={pub.doi || index} className="mb-2 py-3">
                   {Array.isArray(pub.author) ? pub.author.join(', ') : pub.author}.
                   <span className="ml-1">
