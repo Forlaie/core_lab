@@ -6,7 +6,8 @@ import door from './door.png'
 import window from './window.png'
 import close_black from './close-black.png'
 import menu_black from './menu-black.png'
-import genericImg from '../Assets/generic.png';
+import genericImg from './generic.png';
+import arrow_icon from './arrow-icon.png'
 
 export const assets = {
     ml_name,
@@ -17,7 +18,8 @@ export const assets = {
     window,
     close_black,
     menu_black,
-    genericImg
+    genericImg,
+    arrow_icon
 };
 
 export const art = [
