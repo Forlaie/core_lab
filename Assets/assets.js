@@ -1,9 +1,11 @@
-import ml_name from '../Assets/ml_name.png'
-import ap_name from '../Assets/ap_name.png'
-import lz_name from '../Assets/lz_name.png'
-import whiteboard from '../Assets/whiteboard.png'
-import door from '../Assets/door.png'
-import window from '../Assets/window.png'
+import ml_name from './ml_name.png'
+import ap_name from './ap_name.png'
+import lz_name from './lz_name.png'
+import whiteboard from './whiteboard.png'
+import door from './door.png'
+import window from './window.png'
+import close_black from './close-black.png'
+import menu_black from './menu-black.png'
 
 export const assets = {
     ml_name,
@@ -11,7 +13,9 @@ export const assets = {
     lz_name,
     whiteboard,
     door,
-    window
+    window,
+    close_black,
+    menu_black
 };
 
 export const art = [

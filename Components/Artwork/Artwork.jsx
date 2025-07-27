@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image';
-import { art } from '@/data/artwork';
+import { art } from '@/Assets/assets';
 
 const Artwork = () => {
 
