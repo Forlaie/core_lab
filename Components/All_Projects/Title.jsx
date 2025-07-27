@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import publications from '../../data/voiceex_papers.json';
+import publications from '../../Papers/voiceex_papers.json';
 import voiceex from '../../Assets/voiceex.png'
 import './Projects.css'
 

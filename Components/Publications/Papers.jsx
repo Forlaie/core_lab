@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react'
-import publicationsByYear from '../../data/papers.json'
+import publicationsByYear from '../../Papers/papers.json'
 import SearchBar from './SearchBar'
 
 const Papers = () => {
@@ -40,7 +40,7 @@ const Papers = () => {
   })
 
   return (
-    <section className="pr-30 pl-5 py-5 mx-auto w-300">
+    <section className="pr-30 pl-5 py-5 ">
       <h1 className="text-2xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3]">
         All Publications
       </h1>
