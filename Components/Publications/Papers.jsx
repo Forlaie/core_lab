@@ -3,7 +3,6 @@
 import React, { useState } from 'react'
 import publicationsByYear from '../../data/papers.json'
 import SearchBar from './SearchBar'
-import "./Style.css"
 
 const Papers = () => {
   const [query, setQuery] = useState('')

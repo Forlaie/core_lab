@@ -9,4 +9,5 @@
   --shadow-white: 4px 4px 0 #fff;
 
   --grid-template-columns-auto: repeat(auto-fit, minmax(300px, 1fr));
+  --grid-template-columns-people: repeat(auto-fit, minmax(350px, 1fr));
 }

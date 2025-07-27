@@ -1,6 +1,6 @@
 import React from 'react'
 import publications from '../../data/papers.json'
-import bio from '../../data/bios.js'
+import bio from '../../Assets/assets.js'
 import Image from 'next/image'
 import website_icon from '../../Assets/website_icon.png'
 import google_scholar_icon from '../../Assets/google_scholar_icon.png'

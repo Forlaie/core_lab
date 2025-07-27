@@ -1,5 +1,4 @@
-.nav-links li::after{ /* virtual element after each list item's content
-    often used for decorative effects (like underlines, arrows, icons, etc.)*/
+.nav-links li::after{
     content: '';
     width: 0%;
     height: 2px;

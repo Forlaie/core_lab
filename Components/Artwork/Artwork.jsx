@@ -13,7 +13,7 @@ const Artwork = () => {
       
       <div className='grid grid-cols-auto my-5 gap-6'>
         {art.map((artwork, index)=>(
-            <div className='border border-gray-400 rounded-lg px-5 py-5 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500' key={index}>
+            <div className='border border-gray-400 rounded-lg px-5 py-5' key={index}>
                 <Image src={artwork.image} alt="" className=''/>
                 <h3 className='text-lg my-4 text-[#0b3a72] font-semibold'>Artist: {artwork.artist}</h3>
                 <p className='text-sm text-gray-600 leading-5'>{artwork.description}</p>
