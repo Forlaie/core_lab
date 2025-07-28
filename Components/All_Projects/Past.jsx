@@ -1,5 +1,4 @@
 import React from 'react'
-import './Projects.css'
 import Image from 'next/image'
 
 const Past = () => {
