@@ -40,7 +40,7 @@ const Members = () => {
         {grads.map((person, index)=>(
 
           <Link href={person.link} key={index}>
-          <div className="border border-gray-400 rounded-lg px-8 py-8 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">
+          <div className="border border-gray-400 rounded-lg px-5 py-5 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">
             <div className="flex box-border items-center">
                   <div className="w-[100px] h-[100px] rounded-full overflow-hidden flex-shrink-0">
                     <Image
@@ -68,7 +68,7 @@ const Members = () => {
         {undergrads.map((person, index)=>(
 
           <Link href={person.link} key={index}>
-          <div className="border border-gray-400 rounded-lg px-8 py-8 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">
+          <div className="border border-gray-400 rounded-lg px-5 py-5 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">
             <div className="flex box-border items-center">
                   <div className="w-[100px] h-[100px] rounded-full overflow-hidden flex-shrink-0">
                     <Image
