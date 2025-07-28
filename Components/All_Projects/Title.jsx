@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image';
 import publications from '../../Papers/voiceex_papers.json';
 import voiceex from '../../Assets/voiceex.png'
-import './Projects.css'
 
 const Title = ({ title }) => {
 
