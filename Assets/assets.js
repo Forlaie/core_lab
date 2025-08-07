@@ -1,4 +1,16 @@
-import andibergen from './andibergen.jpg'
+import michael_pfp from './michael_pfp.jpg'
+import andrew_pfp from './andrew_pfp.jpg'
+import lisa_pfp from './lisa_pfp.jpg'
+import bogdan_pfp from './bogdan_pfp.jpg'
+import tingting_pfp from './tingting_pfp.jpg'
+import andi_pfp from './andi_pfp.jpg'
+import angela_pfp from './angela_pfp.jpg'
+import brian_pfp from './brian_pfp.jpg'
+import naaz_pfp from './naaz_pfp.jpg'
+import harry_pfp from './harry_pfp.jpg'
+import jessica_pfp from './jessica_pfp.jpg'
+import amber_pfp from './amber_pfp.jpg'
+import khushi_pfp from './khushi_pfp.jpg'
 
 import ml_name from './ml_name.png'
 import ap_name from './ap_name.png'
@@ -16,7 +28,19 @@ import voiceex from './voiceex.png'
 import voiceex_pubs from '../Papers/Projects/voiceex_papers.json'
 
 export const assets = {
-    andibergen,
+    michael_pfp,
+    andrew_pfp,
+    lisa_pfp,
+    bogdan_pfp,
+    tingting_pfp,
+    andi_pfp,
+    angela_pfp,
+    brian_pfp,
+    naaz_pfp,
+    harry_pfp,
+    jessica_pfp,
+    amber_pfp,
+    khushi_pfp,
 
     voiceex,
     voiceex_pubs,
@@ -71,7 +95,7 @@ export const professors = {
   "Michael Liut":
   {
     name: "Michael Liut",
-    image: assets.genericImg,
+    image: assets.michael_pfp,
     position: "Assistant Professor, Teaching Stream (UTM)",
     link: "/team/michael_liut",
     bio: "Michael Liut is an Assistant Professor, Teaching Stream at the University of Toronto Mississauga, positioned at the intersection of computer science and education. Michael’s primary research emphasis is on applied AI/ML in education, delving into the intricate realms of adaptive educational technologies, data systems, algorithmic design, and student behaviour. His passion lies in harnessing these insights to craft adaptive experimentation and innovative behavioural interventions. At the heart of his work, Michael strives to refine and enhance the educational journey. He dedicates considerable effort to the creation and refinement of models, tools, and interventions that aspire to elevate his students’ academic experience.",
@@ -83,7 +107,7 @@ export const professors = {
   "Andrew Petersen":
   {
     name: "Andrew Petersen",
-    image: assets.genericImg,
+    image: assets.andrew_pfp,
     position: "Professor, Teaching Stream (UTM)",
     link: "/team/andrew_petersen",
     bio: "Andrew Petersen has experience with and interest in tool design (PCRS) and educational data mining, assessment construction, and social and psychological interventions in computing. His primary research interest is in computer science education, with a special focus on introductory education.",
@@ -95,7 +119,7 @@ export const professors = {
   "Lisa Zhang":
   {
     name: "Lisa Zhang",
-    image: assets.genericImg,
+    image: assets.lisa_pfp,
     position: "Assistant Professor, Teaching Stream (UTM)",
     link: "/team/lisa_zhang",
     bio: "",
@@ -107,7 +131,7 @@ export const professors = {
   "Bogdan Simion":
   {
     name: "Bogdan Simion",
-    image: assets.genericImg,
+    image: assets.bogdan_pfp,
     position: "Associate Professor, Teaching Stream (UTM)",
     link: "/team/bogdan_simion",
     bio: "Bogdan Simion is an Associate Professor, Teaching Stream in the Department of Mathematical and Computational Sciences at University of Toronto Mississauga. He has worked on several pedagogic research projects, from analyzing the impact of active learning classrooms, studying group work dynamics, analyzing student help-seeking behaviours, development of problem-solving skills across the curriculum, writing skill development, behavioral design interventions, techniques such as productive failure in computer science, and most recently the role and impact of LLMs/SLMs on student learning. ",
@@ -119,7 +143,7 @@ export const professors = {
   "Tingting Zhu":
   {
     name: "Tingting Zhu",
-    image: assets.genericImg,
+    image: assets.tingting_pfp,
     position: "Assistant Professor, Teaching Stream (UTM)",
     link: "/team/tingting_zhu",
     bio: "Tingting Zhu is an Assistant Professor, Teaching Stream, cross-appointed in Computer Science (CS) and Geographic Information Science (GIS). Currently, she is also serving as the GIS Program Director at the University of Toronto Mississauga (UTM), overseeing curriculum development and fostering interdisciplinary applications of GIS. She has published and presented in various venues including computing education research and geography education conferences, and interdisciplinary journals on themes such as engagement through storytelling, implications of GenAI in education, competency-based curricula, and experiential learning.",
@@ -131,7 +155,7 @@ export const professors = {
   "Andi Bergen":
   {
     name: "Andi Bergen",
-    image: assets.andibergen,
+    image: assets.andi_pfp,
     position: "Assistant Professor, Teaching Stream (UTM)",
     link: "/team/andi_bergen",
     bio: "",
@@ -143,7 +167,7 @@ export const professors = {
   "Angela Zavaleta Bernuy":
   {
     name: "Angela Zavaleta Bernuy",
-    image: assets.genericImg,
+    image: assets.angela_pfp,
     position: "Assistant Professor (McMaster)",
     link: "/team/angela_zavaleta_bernuy",
     bio: "Angela Zavaleta is an Assistant Professor at McMaster University and a PhD candidate at the University of Toronto. Her research is at the intersection of computing education and human-computer interaction, with a focus on intelligent educational technologies. She explores behavioural interventions, ethical experimentation, and interactive tools to better understand and support student learning in computing.",
@@ -155,7 +179,7 @@ export const professors = {
   "Brian Harrington":
   {
     name: "Brian Harrington",
-    image: assets.genericImg,
+    image: assets.brian_pfp,
     position: "Professor, Teaching Stream (UTSC)",
     link: "/team/brian_harrington",
     bio: "Brian Harrington is a Professor, Teaching Stream at the University of Toronto Scarborough. His research focuses mainly on CS pedagogy and undergraduate education. His focus is on helping students develop the non technical skills that will help them succeed in academia or industry.",
@@ -170,7 +194,7 @@ export const grads = {
   "Naaz Sibia":
   {
     name: "Naaz Sibia",
-    image: assets.genericImg,
+    image: assets.naaz_pfp,
     position: "Ph.D. Student in Computer Science (UofT)",
     link: "/team/naaz_sibia",
     bio: "Naaz is a PHD student and she is very cool :D",
@@ -182,7 +206,7 @@ export const grads = {
   "Harry Ye":
   {
     name: "Harry Ye",
-    image: assets.genericImg,
+    image: assets.harry_pfp,
     position: "Ph.D. Student in Computer Science (UofT)",
     link: "/team/harry_ye",
     bio: "Harry is a PhD student at University of Toronto Dynamic Grapgics Project (DGP). He is mainly interested in research and designing Human-Centered AI systems, aimed at augmenting human capabilities in knowledge work. His approach emphasizes creating practical, interactive tools where AI assistance is made transparent and controllable. His work explores applications in two key areas: AI in Education, focusing on promoting effective learning strategies, and productive human-AI collaboration for students; and AI-driven Research Tools, concentrating on enhancing scholarly activities like complex sensemaking, evidence synthesis, and knowledge discovery.",
@@ -197,7 +221,7 @@ export const undergrads = {
   "Jessica Wen":
   {
     name: "Jessica Wen",
-    image: assets.genericImg,
+    image: assets.jessica_pfp,
     position: "Undergraduate Researcher (UTM)",
     link: "/team/jessica_wen",
     bio: "Jessica is an undergrad researcher involved with CSE research, exploring the integration of generative AI to enhance learning experiences and instructional tools.",
@@ -209,7 +233,7 @@ export const undergrads = {
   "Khushi Malik":
   {
     name: "Khushi Malik",
-    image: assets.genericImg,
+    image: assets.khushi_pfp,
     position: "Undergraduate Researcher (UTM)",
     link: "/team/khushi_malik",
     bio: "Khushi is an undergraduate student involved in machine learning and CSE, with experience in self-regulated learning research, regression analysis, and applying ML models across multidisciplinary domains.",
@@ -221,7 +245,7 @@ export const undergrads = {
   "Amber Richardson":
   {
     name: "Amber Richardson",
-    image: assets.genericImg,
+    image: assets.amber_pfp,
     position: "Undergraduate Researcher (UTM)",
     link: "/team/amber_richardson",
     bio: "Amber is an undergraduate student involved with research in computing education, ML education, and first-year writing. They help explore self-regulated learning, student experiences in first year and ML courses, and student experiences using AI in writing.",
