@@ -5,6 +5,7 @@ import Image from 'next/image'
 import website_icon from '../../Assets/website_icon.png'
 import google_scholar_icon from '../../Assets/google_scholar_icon.png'
 import email_icon from '../../Assets/email_icon.png'
+import linkedin_icon from '../../Assets/linkedin_icon.png'
 
 const Member = ({ member }) => {
   const parts = (member || '').split('_')
@@ -67,7 +68,7 @@ const Member = ({ member }) => {
             )}
             {person.email && (
               <div className="flex space-x-1 items-center">
-                <Image src={email_icon} alt={person.name} className="w-6" />
+                <Image src={email_icon} alt={person.email} className="w-6" />
                 <a href={`mailto:${person.email}`} className="text-blue-600 hover:underline">
                   {person.email}
                 </a>
@@ -75,7 +76,7 @@ const Member = ({ member }) => {
             )}
             {person.googlescholar && (
               <div className="flex space-x-1 items-center">
-                <Image src={google_scholar_icon} alt={person.name} className="w-6" />
+                <Image src={google_scholar_icon} alt="Google Scholar Profile" className="w-6" />
                 <a
                   href={person.googlescholar}
                   target="_blank"
@@ -83,6 +84,19 @@ const Member = ({ member }) => {
                   className="text-blue-600 hover:underline"
                 >
                   Google Scholar
+                </a>
+              </div>
+            )}
+            {person.linkedin && (
+              <div className="flex space-x-1 items-center">
+                <Image src={linkedin_icon} alt="LinkedIn Profile" className="w-6" />
+                <a
+                  href={person.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  LinkedIn
                 </a>
               </div>
             )}

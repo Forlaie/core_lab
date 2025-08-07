@@ -13,6 +13,9 @@ const Sidebar = () => {
             <a href="#undergrads" className='text-[#06264c] pb-2 border-b border-[#f1f2f3] cursor-pointer'>
                 Undergraduates
             </a>
+            <a href="#pastmembers" className='text-[#06264c] pb-2 border-b border-[#f1f2f3] cursor-pointer'>
+                Past Members
+            </a>
         </div>
     </div>
   )

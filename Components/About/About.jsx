@@ -8,11 +8,14 @@ const About = () => {
             Welcome to the CORE Lab (COmputational Research and Education)!
         </p>
         <p className='pt-2'>
+            
+        </p>
+        <p className='pt-2'>
             Here, we're primarily focused on computer science education research, investigating and improving how people learn, teach, and engage with computing.
             Our research spans pedagogical strategies, assessment design, student experience, and more, all with a goal of improving CS education!
         </p>
         <p className='pt-2'>
-            Our team includes faculty, graduate students, and undergrads from diverse academic backgrounds.
+            Our team includes faculty, graduate students, and undergrads from UofT (all three campuses) and McMaster.
             Our members are not only highly accomplished researchers, but also genuinely fun people <i>(yes, you can be both!)</i>.
         </p>
     </section>
