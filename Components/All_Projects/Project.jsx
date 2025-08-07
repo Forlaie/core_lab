@@ -1,34 +1,16 @@
-"use client"
-
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { projectInfo } from '@/Assets/assets';
 
 const Project = ({ name }) => {
 
-  // const authorPublications = fetch(projectInfo[name].publications)
+  const project = projectInfo[name]
 
-  // const [pubs, setPubs] = useState(null);
+  if (!project) return <div>Project Not Found</div>;
 
-  // useEffect(() => {
-  //   const loadPubs = async () => {
-  //     try {
-  //       const res = await fetch(`/${name}_papers.json`);
-  //       const data = await res.json();
-  //       setPubs(data);
-  //     } catch (err) {
-  //       console.error("Failed to load publication data:", err);
-  //     }
-  //   };
+  const pubs = project.publications
 
-  //   loadPubs();
-  // }, [name]);
-
-  // if (!pubs) return <div>Project Not Found</div>;
-
-  // const authorPublications = pubs
-
-  const pubsByYear = authorPublications.reduce((acc, pub) => {
+  const pubsByYear = pubs.reduce((acc, pub) => {
     const year = pub.year || 'Unknown';
     if (!acc[year]) {
       acc[year] = [];
@@ -47,7 +29,7 @@ const Project = ({ name }) => {
         </h1>
 
         <div className='pt-3 flex items-center'>
-            {/* <Image src={voiceex} alt="" className='w-[20%] pb-5' /> */}
+            <Image src={project.image} alt="" className='w-[20%] pb-5' />
             <div className='pl-5 text-[#0b3a72]'>
                 <p className='pb-5'>
                 VoiceEx is a voice explanations system we've been developing over the past couple years.

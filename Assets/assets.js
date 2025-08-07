@@ -13,11 +13,13 @@ import genericImg from './generic.png';
 import arrow_icon from './arrow-icon.png'
 
 import voiceex from './voiceex.png'
+import voiceex_pubs from '../Papers/Projects/voiceex_papers.json'
 
 export const assets = {
     andibergen,
 
     voiceex,
+    voiceex_pubs,
     
     ml_name,
     ap_name,
@@ -251,6 +253,6 @@ export const projectInfo = {
       name: "VoiceEx",
       image: assets.voiceex,
       description: "VoiceEx is a voice explanations system we've been developing over the past couple years. Primarily focused on self-explanations to enhance student learning, we've gone from prompting text self-explanations to voice self-explanations. Using VoiceEx, instructors can prompt students to reflect on a specific question/topic, which students then record a self-explanation to. Afterwards, students may receive feedback or follow-up questions on their self-explanation.",
-      publications: "../Papers/Projects/voiceex.json"
+      publications: assets.voiceex_pubs
     }
 };

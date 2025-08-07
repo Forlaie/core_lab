@@ -40,7 +40,7 @@ const Papers = () => {
   })
 
   return (
-    <section className="pr-30 pl-5 py-5 ">
+    <section className="pr-30 pl-5 py-5">
       <h1 className="text-2xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3]">
         All Publications
       </h1>
