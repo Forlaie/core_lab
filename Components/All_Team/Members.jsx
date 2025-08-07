@@ -9,7 +9,7 @@ const Members = () => {
     <div className="scroll-mt-20" id="professor">
       <h1 className='text-3xl text-[#0a1588] font-bold pt-5'>Professors</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-3 pr-30">
-        {professors.map((person, index)=>(
+        {Object.values(professors).map((person, index)=>(
 
           <Link href={person.link} key={index}>
           <div className="border border-gray-400 rounded-lg px-5 py-5 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">
@@ -37,7 +37,7 @@ const Members = () => {
     <div className="scroll-mt-5" id="grads">
       <h1 className='text-3xl text-[#0a1588] font-bold pt-20'>Graduate Students</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-3 pr-30">
-        {grads.map((person, index)=>(
+        {Object.values(grads).map((person, index)=>(
 
           <Link href={person.link} key={index}>
           <div className="border border-gray-400 rounded-lg px-5 py-5 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">
@@ -65,7 +65,7 @@ const Members = () => {
     <div className="scroll-mt-5" id="undergrads">
       <h1 className='text-3xl text-[#0a1588] font-bold pt-20'>Undergraduate Students</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-3 pr-30">
-        {undergrads.map((person, index)=>(
+        {Object.values(undergrads).map((person, index)=>(
 
           <Link href={person.link} key={index}>
           <div className="border border-gray-400 rounded-lg px-5 py-5 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">
@@ -93,7 +93,7 @@ const Members = () => {
     <div className="scroll-mt-5" id="pastmembers">
       <h1 className='text-3xl text-[#0a1588] font-bold pt-20'>Past Members</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-3 pr-30">
-        {pastmembers.map((person, index)=>(
+        {Object.values(pastmembers).map((person, index)=>(
 
           <Link href={person.link} key={index}>
           <div className="border border-gray-400 rounded-lg px-5 py-5 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">

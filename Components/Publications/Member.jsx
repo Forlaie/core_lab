@@ -1,6 +1,6 @@
 import React from 'react'
 import publications from '../../Papers/papers.json'
-import { professors, grads, undergrads } from '@/Assets/assets';
+import { professors, grads, undergrads, pastmembers } from '@/Assets/assets';
 import Image from 'next/image'
 import website_icon from '../../Assets/website_icon.png'
 import google_scholar_icon from '../../Assets/google_scholar_icon.png'
@@ -14,7 +14,7 @@ const Member = ({ member }) => {
     .map(part => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
     .join(' ')
 
-  const person = professors.find(m => m.name === fullName) || grads.find(m => m.name === fullName) || undergrads.find(m => m.name === fullName)
+  const person = professors[fullName] || grads[fullName] || undergrads[fullName] || pastmembers[fullName]
 
   if (!person) {
     return <p>Member not found</p>

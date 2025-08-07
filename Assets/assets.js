@@ -6,10 +6,12 @@ import lz_name from './lz_name.png'
 import whiteboard from './whiteboard.png'
 import door from './door.png'
 import window from './window.png'
+
 import close_black from './close-black.png'
 import menu_black from './menu-black.png'
 import genericImg from './generic.png';
 import arrow_icon from './arrow-icon.png'
+
 import voiceex from './voiceex.png'
 
 export const assets = {
@@ -63,7 +65,8 @@ export const art = [
     }
 ]
 
-export const professors = [
+export const professors = {
+  "Michael Liut":
   {
     name: "Michael Liut",
     image: assets.genericImg,
@@ -75,6 +78,7 @@ export const professors = [
     email: "michael.liut@utoronto.ca",
     linkedin: "https://www.linkedin.com/in/mliut/"
   },
+  "Andrew Petersen":
   {
     name: "Andrew Petersen",
     image: assets.genericImg,
@@ -86,6 +90,7 @@ export const professors = [
     email: "andrew.petersen@utoronto.ca",
     linkedin: "https://www.linkedin.com/in/andrew-petersen-989b1821/"
   },
+  "Lisa Zhang":
   {
     name: "Lisa Zhang",
     image: assets.genericImg,
@@ -97,6 +102,7 @@ export const professors = [
     email: "lczhang@cs.toronto.edu",
     linkedin: "https://www.linkedin.com/in/lisaczhang/"
   },
+  "Bogdan Simion":
   {
     name: "Bogdan Simion",
     image: assets.genericImg,
@@ -108,6 +114,7 @@ export const professors = [
     email: "bogdan.simion@utoronto.ca",
     linkedin: "https://www.linkedin.com/in/bogdan-simion-1113b27/"
   },
+  "Tingting Zhu":
   {
     name: "Tingting Zhu",
     image: assets.genericImg,
@@ -119,6 +126,7 @@ export const professors = [
     email: "tingting.zhu@utoronto.ca",
     linkedin: "https://www.linkedin.com/in/tingtingzhuphd/"
   },
+  "Andi Bergen":
   {
     name: "Andi Bergen",
     image: assets.andibergen,
@@ -130,6 +138,7 @@ export const professors = [
     email: "andi.bergen@utoronto.ca",
     linkedin: "https://www.linkedin.com/in/anbergen/"
   },
+  "Angela Zavaleta Bernuy":
   {
     name: "Angela Zavaleta Bernuy",
     image: assets.genericImg,
@@ -141,6 +150,7 @@ export const professors = [
     email: "zavaleta@mcmaster.ca",
     linkedin: "https://www.linkedin.com/in/angela-zavaleta-bernuy/"
   },
+  "Brian Harrington":
   {
     name: "Brian Harrington",
     image: assets.genericImg,
@@ -152,9 +162,10 @@ export const professors = [
     email: "brian.harrington@utoronto.ca",
     linkedin: "https://www.linkedin.com/in/brian-harrington-utsc/"
   }
-];
+};
 
-export const grads = [
+export const grads = {
+  "Naaz Sibia":
   {
     name: "Naaz Sibia",
     image: assets.genericImg,
@@ -166,6 +177,7 @@ export const grads = [
     email: "naaz.sibia@utoronto.ca",
     linkedin: "https://www.linkedin.com/in/naaz-sibia/"
   },
+  "Harry Ye":
   {
     name: "Harry Ye",
     image: assets.genericImg,
@@ -177,13 +189,14 @@ export const grads = [
     email: "harryye@cs.toronto.edu",
     linkedin: "https://www.linkedin.com/in/runlong-ye/"
   }
-];
+};
 
-export const undergrads = [
+export const undergrads = {
+  "Jessica Wen":
   {
     name: "Jessica Wen",
     image: assets.genericImg,
-    position: "Undergraduate Researcher",
+    position: "Undergraduate Researcher (UTM)",
     link: "/team/jessica_wen",
     bio: "Jessica is an undergrad researcher involved with CSE research, exploring the integration of generative AI to enhance learning experiences and instructional tools.",
     website: "",
@@ -191,10 +204,11 @@ export const undergrads = [
     email: "jessica.wen@mail.utoronto.ca",
     linkedin: "https://www.linkedin.com/in/jessica-wen1021/"
   },
+  "Khushi Malik":
   {
     name: "Khushi Malik",
     image: assets.genericImg,
-    position: "Undergraduate Researcher",
+    position: "Undergraduate Researcher (UTM)",
     link: "/team/khushi_malik",
     bio: "Khushi is an undergraduate student involved in machine learning and CSE, with experience in self-regulated learning research, regression analysis, and applying ML models across multidisciplinary domains.",
     website: "",
@@ -202,10 +216,11 @@ export const undergrads = [
     email: "khushi.malik@mail.utoronto.ca",
     linkedin: "https://www.linkedin.com/in/khushi-malik19/"
   },
+  "Amber Richardson":
   {
     name: "Amber Richardson",
     image: assets.genericImg,
-    position: "Undergraduate Researcher",
+    position: "Undergraduate Researcher (UTM)",
     link: "/team/amber_richardson",
     bio: "Amber is an undergraduate student involved with research in computing education, ML education, and first-year writing. They help explore self-regulated learning, student experiences in first year and ML courses, and student experiences using AI in writing.",
     website: "",
@@ -213,26 +228,29 @@ export const undergrads = [
     email: "amber.richardson@mail.utoronto.ca",
     linkedin: "https://www.linkedin.com/in/j-amber-l-richardson/"
   }
-]
+};
 
-export const pastmembers = [
+export const pastmembers = {
+  "Temp Member":
   {
-    name: "Member 1",
+    name: "Temp Member",
     image: assets.genericImg,
-    position: "Member 1",
-    link: "/team/member1",
+    position: "Temp Member",
+    link: "/team/temp_member",
     bio: "",
     website: "",
     googlescholar: "",
     email: "",
     linkedin: ""
   }
-]
+};
 
-export const projectInfo = [
-  {
-    image: assets.voiceex,
-    description: "VoiceEx is a voice explanations system we've been developing over the past couple years. Primarily focused on self-explanations to enhance student learning, we've gone from prompting text self-explanations to voice self-explanations. Using VoiceEx, instructors can prompt students to reflect on a specific question/topic, which students then record a self-explanation to. Afterwards, students may receive feedback or follow-up questions on their self-explanation.",
-    publications: ""
-  }
-]
+export const projectInfo = {
+  voiceex:
+    {
+      name: "VoiceEx",
+      image: assets.voiceex,
+      description: "VoiceEx is a voice explanations system we've been developing over the past couple years. Primarily focused on self-explanations to enhance student learning, we've gone from prompting text self-explanations to voice self-explanations. Using VoiceEx, instructors can prompt students to reflect on a specific question/topic, which students then record a self-explanation to. Afterwards, students may receive feedback or follow-up questions on their self-explanation.",
+      publications: "../Papers/Projects/voiceex.json"
+    }
+};

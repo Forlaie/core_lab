@@ -2,28 +2,31 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { projectInfo } from '@/Assets/assets';
 
 const Project = ({ name }) => {
 
-  const [pubs, setPubs] = useState(null);
+  // const authorPublications = fetch(projectInfo[name].publications)
 
-  useEffect(() => {
-    const loadPubs = async () => {
-      try {
-        const res = await fetch(`/${name}_papers.json`);
-        const data = await res.json();
-        setPubs(data);
-      } catch (err) {
-        console.error("Failed to load publication data:", err);
-      }
-    };
+  // const [pubs, setPubs] = useState(null);
 
-    loadPubs();
-  }, [name]);
+  // useEffect(() => {
+  //   const loadPubs = async () => {
+  //     try {
+  //       const res = await fetch(`/${name}_papers.json`);
+  //       const data = await res.json();
+  //       setPubs(data);
+  //     } catch (err) {
+  //       console.error("Failed to load publication data:", err);
+  //     }
+  //   };
 
-  if (!pubs) return <div>Project Not Found</div>;
+  //   loadPubs();
+  // }, [name]);
 
-  const authorPublications = pubs
+  // if (!pubs) return <div>Project Not Found</div>;
+
+  // const authorPublications = pubs
 
   const pubsByYear = authorPublications.reduce((acc, pub) => {
     const year = pub.year || 'Unknown';
