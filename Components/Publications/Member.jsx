@@ -17,7 +17,7 @@ const Member = ({ member }) => {
   const person = professors.find(m => m.name === fullName) || grads.find(m => m.name === fullName) || undergrads.find(m => m.name === fullName)
 
   if (!person) {
-    return <p>Member not found.</p>
+    return <p>Member not found</p>
   }
 
   // Filter publications inside each year group, keeping original year order
@@ -36,9 +36,9 @@ const Member = ({ member }) => {
   const sortedYears = Object.keys(filteredPubsByYear).sort((a, b) => {
     const aNum = parseInt(a)
     const bNum = parseInt(b)
-    if (isNaN(aNum)) return 1 // Put non-numeric last
+    if (isNaN(aNum)) return 1
     if (isNaN(bNum)) return -1
-    return bNum - aNum // Descending numeric sort
+    return bNum - aNum
   })
 
 

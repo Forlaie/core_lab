@@ -1,11 +1,29 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import publications from '../../Papers/voiceex_papers.json';
-import voiceex from '../../Assets/voiceex.png'
 
-const Title = ({ title }) => {
+const Project = ({ name }) => {
 
-  const authorPublications = publications;
+  const [pubs, setPubs] = useState(null);
+
+  useEffect(() => {
+    const loadPubs = async () => {
+      try {
+        const res = await fetch(`/${name}_papers.json`);
+        const data = await res.json();
+        setPubs(data);
+      } catch (err) {
+        console.error("Failed to load publication data:", err);
+      }
+    };
+
+    loadPubs();
+  }, [name]);
+
+  if (!pubs) return <div>Project Not Found</div>;
+
+  const authorPublications = pubs
 
   const pubsByYear = authorPublications.reduce((acc, pub) => {
     const year = pub.year || 'Unknown';
@@ -26,7 +44,7 @@ const Title = ({ title }) => {
         </h1>
 
         <div className='pt-3 flex items-center'>
-            <Image src={voiceex} alt="" className='w-[20%] pb-5' />
+            {/* <Image src={voiceex} alt="" className='w-[20%] pb-5' /> */}
             <div className='pl-5 text-[#0b3a72]'>
                 <p className='pb-5'>
                 VoiceEx is a voice explanations system we've been developing over the past couple years.
@@ -112,4 +130,4 @@ const Title = ({ title }) => {
       );
     };
     
-    export default Title;
+    export default Project;
