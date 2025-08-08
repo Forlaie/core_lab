@@ -53,6 +53,7 @@ const Navbar = () => {
                 <Link href="/team"><li className='cursor-pointer'>Team</li></Link>
                 <Link href="/publications"><li className='cursor-pointer'>Publications</li></Link>
                 <Link href="/projects"><li className='cursor-pointer'>Projects</li></Link>
+                <Link href="#contactus"><li className='cursor-pointer'>Contact Us</li></Link>
               </ul>
 
               <button className='block md:hidden top-0 right-0' onClick={openMenu}>
@@ -71,6 +72,7 @@ const Navbar = () => {
           <Link href="/team"><li className='cursor-pointer'>Team</li></Link>
           <Link href="/publications"><li className='cursor-pointer'>Publications</li></Link>
           <Link href="/projects"><li className='cursor-pointer'>Projects</li></Link>
+          <Link href="#contactus"><li className='cursor-pointer'>Contact Us</li></Link>
       </ul>
 
     </nav>

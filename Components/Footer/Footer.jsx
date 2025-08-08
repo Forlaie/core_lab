@@ -5,7 +5,7 @@ import email_icon from '../../Assets/email_icon.png'
 
 const Footer = () => {
   return (
-    <div className='px-30 pt-10 mx-auto'>
+    <div className='px-30 pt-10 mx-auto' id='contactus'>
       <div className='text-center sm:flex items-center justify-between border-t border-gray-400 mt-12 py-6'>
         <p>Want to contact us or learn more?</p>
         <ul className='flex flex-col items-front gap-2 justify-center mt-4 sm:mt-0'>
