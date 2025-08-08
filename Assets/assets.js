@@ -26,6 +26,10 @@ import arrow_icon from './arrow-icon.png'
 
 import voiceex from './voiceex.png'
 import voiceex_pubs from '../Papers/Projects/voiceex_papers.json'
+import copilotlens from './copilotlens.png'
+import copilotlens_pubs from '../Papers/Projects/copilotlens_papers.json'
+import arc from './arc.png'
+import arc_pubs from '../Papers/Projects/arc_papers.json'
 
 export const assets = {
     michael_pfp,
@@ -44,6 +48,10 @@ export const assets = {
 
     voiceex,
     voiceex_pubs,
+    copilotlens,
+    copilotlens_pubs,
+    arc,
+    arc_pubs,
     
     ml_name,
     ap_name,
@@ -203,12 +211,12 @@ export const grads = {
     email: "naaz.sibia@utoronto.ca",
     linkedin: "https://www.linkedin.com/in/naaz-sibia/"
   },
-  "Harry Ye":
+  "Runlong Ye":
   {
     name: "Harry Ye",
     image: assets.harry_pfp,
     position: "Ph.D. Student in Computer Science (UofT)",
-    link: "/team/harry_ye",
+    link: "/team/runlong_ye",
     bio: "Harry is a PhD student at University of Toronto Dynamic Grapgics Project (DGP). He is mainly interested in research and designing Human-Centered AI systems, aimed at augmenting human capabilities in knowledge work. His approach emphasizes creating practical, interactive tools where AI assistance is made transparent and controllable. His work explores applications in two key areas: AI in Education, focusing on promoting effective learning strategies, and productive human-AI collaboration for students; and AI-driven Research Tools, concentrating on enhancing scholarly activities like complex sensemaking, evidence synthesis, and knowledge discovery.",
     website: "https://harryye-com.vercel.app",
     googlescholar: "https://scholar.google.com/citations?user=UAtfVNYAAAAJ&hl=en",
@@ -275,8 +283,49 @@ export const projectInfo = {
   voiceex:
     {
       name: "VoiceEx",
+      link: "/projects/voiceex",
       image: assets.voiceex,
       description: "VoiceEx is a voice explanations system we've been developing over the past couple years. Primarily focused on self-explanations to enhance student learning, we've gone from prompting text self-explanations to voice self-explanations. Using VoiceEx, instructors can prompt students to reflect on a specific question/topic, which students then record a self-explanation to. Afterwards, students may receive feedback or follow-up questions on their self-explanation.",
+      publications: assets.voiceex_pubs
+    },
+  copilotlens:
+    {
+      name: "CopilotLens",
+      link: "/projects/copilotlens",
+      image: assets.copilotlens,
+      description: "Developing CopilotLens, a framework that transforms AI code generation from opaque suggestions into transparent, explainable interactions. By providing post-hoc summaries and on-demand explanations, we aim to foster more trustworthy human-AI collaboration in software development.",
+      publications: assets.copilotlens_pubs
+    },
+  arc:
+    {
+      name: "ARC",
+      link: "/projects/arc",
+      image: assets.arc,
+      description: "ARC: Automated Review Companion Leveraging User-Centered Design for Systematic Literature Reviews",
+      publications: assets.arc_pubs
+    },
+  quickta:
+    {
+      name: "QuickTA",
+      link: "/projects/quickta",
+      image: assets.genericImg,
+      description: "",
+      publications: assets.voiceex_pubs
+    },
+  medbot:
+    {
+      name: "MedBot",
+      link: "/projects/medbot",
+      image: assets.genericImg,
+      description: "",
+      publications: assets.voiceex_pubs
+    },
+  visproject:
+    {
+      name: "Naaz Viz Project",
+      link: "/projects/vizproject",
+      image: assets.genericImg,
+      description: "",
       publications: assets.voiceex_pubs
     }
 };

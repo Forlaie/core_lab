@@ -1,0 +1,20 @@
+{
+    "2025": [
+        {
+            "url": "https://arxiv.org/abs/2506.20062",
+            "primaryclass": "cs.HC",
+            "archiveprefix": "arXiv",
+            "eprint": "2506.20062",
+            "year": "2025",
+            "author": [
+                "Runlong Ye",
+                "Zeling Zhang",
+                "Boushra Almazroua",
+                "Michael Liut"
+            ],
+            "title": "Beyond Autocomplete: Designing CopilotLens Towards Transparent and Explainable AI Coding Agents",
+            "ENTRYTYPE": "misc",
+            "ID": "ye2025autocompletedesigningcopilotlenstransparent"
+        }
+    ]
+}

@@ -3,7 +3,7 @@ import json
 from collections import defaultdict, OrderedDict
 
 # Load the .bib file
-with open("papers.bib", encoding="utf-8") as bibtex_file:
+with open("./Projects/arc.bib", encoding="utf-8") as bibtex_file:
     bib_database = bibtexparser.load(bibtex_file)
 
 # Process entries to split authors
@@ -33,5 +33,5 @@ grouped_by_year_sorted = OrderedDict(
 )
 
 # Write to JSON
-with open("papers.json", "w") as json_file:
+with open("./Projects/arc_papers.json", "w") as json_file:
     json.dump(grouped_by_year_sorted, json_file, indent=4)
