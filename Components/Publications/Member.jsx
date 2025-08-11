@@ -1,5 +1,6 @@
 import React from 'react'
-import publications from '../../Papers/papers.json'
+import papers from '../../Papers/papers.json'
+import posters from '../../Papers/Posters/poster_papers.json';
 import { professors, grads, undergrads, pastmembers } from '@/Assets/assets';
 import Image from 'next/image'
 import website_icon from '../../Assets/website_icon.png'
@@ -20,20 +21,18 @@ const Member = ({ member }) => {
     return <p>Member not found</p>
   }
 
-  // Filter publications inside each year group, keeping original year order
-  const filteredPubsByYear = {}
-
-  for (const year of Object.keys(publications)) {
-    const pubsInYear = publications[year].filter(pub => {
-      const authors = Array.isArray(pub.author) ? pub.author : [pub.author]
+  // Filter papers by year
+  const filteredPapersByYear = {}
+  for (const year of Object.keys(papers)) {
+    const papersInYear = papers[year].filter(paper => {
+      const authors = Array.isArray(paper.author) ? paper.author : [paper.author]
       return authors.some(a => a.toLowerCase() === fullName.toLowerCase())
     })
-    if (pubsInYear.length > 0) {
-      filteredPubsByYear[year] = pubsInYear
+    if (papersInYear.length > 0) {
+      filteredPapersByYear[year] = papersInYear
     }
   }
-
-  const sortedYears = Object.keys(filteredPubsByYear).sort((a, b) => {
+  const sortedPaperYears = Object.keys(filteredPapersByYear).sort((a, b) => {
     const aNum = parseInt(a)
     const bNum = parseInt(b)
     if (isNaN(aNum)) return 1
@@ -41,6 +40,23 @@ const Member = ({ member }) => {
     return bNum - aNum
   })
 
+  // Filter posters by year
+  const filteredPostersByYear = {};
+  for (const poster of posters) {
+    const authors = Array.isArray(poster.author) ? poster.author : [poster.author];
+    if (authors.some(a => a.toLowerCase() === fullName.toLowerCase())) {
+      const year = poster.year || 'Unknown';
+      if (!filteredPostersByYear[year]) filteredPostersByYear[year] = [];
+      filteredPostersByYear[year].push(poster);
+    }
+  }
+  const sortedPosterYears = Object.keys(filteredPostersByYear).sort((a, b) => {
+    const aNum = parseInt(a);
+    const bNum = parseInt(b);
+    if (isNaN(aNum)) return 1;
+    if (isNaN(bNum)) return -1;
+    return bNum - aNum;
+  });
 
   return (
     <section className="px-30 py-10 mx-auto">
@@ -104,54 +120,56 @@ const Member = ({ member }) => {
         </div>
       </div>
 
-      <h1 className="text-xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3] mt-10">
-        Publications
+      <h1 id="papers" className="text-xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3] mt-10">
+        Papers
       </h1>
 
-      {sortedYears.map(year => (
+      {sortedPaperYears.length === 0 && <p className="pt-5">No papers found.</p>}
+
+      {sortedPaperYears.map(year => (
         <div key={year} className="scroll-mt-25 mt-6">
           <div className="text-[20px] text-[#0a1588] font-semibold border-y border-y-[#0a1588] py-2">
             {year}
           </div>
           <ul className="pt-5">
-            {filteredPubsByYear[year].map((pub, index) => (
-              <li key={pub.doi || index} className="mb-2 py-3">
+            {filteredPapersByYear[year].map((paper, index) => (
+              <li key={paper.doi || index} className="mb-2 py-3">
                 <span>
-                  {Array.isArray(pub.author)
-                    ? pub.author.map((a, i) => (
+                  {Array.isArray(paper.author)
+                    ? paper.author.map((a, i) => (
                         <React.Fragment key={i}>
                           {a.toLowerCase() === fullName.toLowerCase() ? (
                             <strong>{a}</strong>
                           ) : (
                             a
                           )}
-                          {i < pub.author.length - 1 && ', '}
+                          {i < paper.author.length - 1 && ', '}
                         </React.Fragment>
                       ))
-                    : pub.author.toLowerCase() === fullName.toLowerCase()
+                    : paper.author.toLowerCase() === fullName.toLowerCase()
                     ? (
-                      <strong>{pub.author}</strong>
+                      <strong>{paper.author}</strong>
                     )
                     : (
-                      pub.author
+                      paper.author
                     )}
                   .
                 </span>
                 <span className="ml-1">
                   <a
-                    href={pub.url}
+                    href={paper.url}
                     className="text-blue-600 hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    "{pub.title}"
+                    "{paper.title}"
                   </a>
-                  <span className="italic"> {pub.booktitle || pub.journal || pub.series}.</span> ({pub.year}).
-                  {pub.url && (
+                  <span className="italic"> {paper.booktitle || paper.journal || paper.series}.</span> ({paper.year}).
+                  {paper.url && (
                     <span className="ml-1">
                       [
                       <a
-                        href={pub.url}
+                        href={paper.url}
                         className="text-blue-600 hover:underline"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -161,11 +179,81 @@ const Member = ({ member }) => {
                       ]
                     </span>
                   )}
-                  {pub.doi && (
+                  {paper.doi && (
                     <span className="ml-1">
                       [
                       <a
-                        href={`https://doi.org/${pub.doi}`}
+                        href={`https://doi.org/${paper.doi}`}
+                        className="text-blue-600 hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        doi
+                      </a>
+                      ]
+                    </span>
+                  )}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+
+      <h1 id="posters" className="text-xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3] mt-10">
+        Posters
+      </h1>
+
+      {sortedPosterYears.length === 0 && <p className="pt-5">No posters found.</p>}
+
+      {sortedPosterYears.map(year => (
+        <div key={year} className="scroll-mt-25 mt-6">
+          <div className="text-[20px] text-[#0a1588] font-semibold border-y border-y-[#0a1588] py-2">
+            {year}
+          </div>
+          <ul className="pt-5">
+            {filteredPostersByYear[year].map((poster, index) => (
+              <li key={poster.doi || index} className="mb-2 py-3">
+                <span>
+                  {Array.isArray(poster.author)
+                    ? poster.author.map((a, i) => (
+                        <React.Fragment key={i}>
+                          {a.toLowerCase() === fullName.toLowerCase() ? <strong>{a}</strong> : a}
+                          {i < poster.author.length - 1 && ', '}
+                        </React.Fragment>
+                      ))
+                    : poster.author}
+                  .
+                </span>
+                <span className="ml-1">
+                  <a
+                    href={poster.url}
+                    className="text-blue-600 hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    "{poster.title}"
+                  </a>
+                  <span className="italic"> {poster.booktitle || poster.journal || poster.series}.</span> ({poster.year}).
+                  {poster.url && (
+                    <span className="ml-1">
+                      [
+                      <a
+                        href={poster.url}
+                        className="text-blue-600 hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        url
+                      </a>
+                      ]
+                    </span>
+                  )}
+                  {poster.doi && (
+                    <span className="ml-1">
+                      [
+                      <a
+                        href={`https://doi.org/${poster.doi}`}
                         className="text-blue-600 hover:underline"
                         target="_blank"
                         rel="noopener noreferrer"

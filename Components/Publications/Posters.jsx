@@ -38,7 +38,7 @@ const Posters = () => {
     }, [length]);
 
   return (
-    <div id="posters" className='py-10 pb-5 pr-30'>
+    <div id="posters" className='pt-10 pb-5 pr-30 scroll-mt-20'>
         <h1 className="text-2xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3]">
             Poster Showcase
         </h1>

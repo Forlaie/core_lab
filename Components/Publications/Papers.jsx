@@ -40,16 +40,16 @@ const Papers = () => {
   })
 
   return (
-    <section id="publications" className="pr-30 pl-5 py-5">
+    <section id="papers" className="pr-30 pl-5 py-5 scroll-mt-20">
       <h1 className="text-2xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3]">
-        All Publications
+        All Papers
       </h1>
 
       <SearchBar query={query} setQuery={setQuery} />
 
       {filtered.length === 0 ? (
         <ul className="pt-5">
-          <li>No matching publications found.</li>
+          <li>No matching papers found.</li>
         </ul>
       ) : (
         sortedYears.map(year => (

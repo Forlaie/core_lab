@@ -7,8 +7,8 @@ const Sidebar = () => {
             <a href="#posters" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
                 Posters
             </a>
-            <a href="#publications" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
-                Publications
+            <a href="#papers" className='color-[#06264c] pb-[8px] border-b border-b-[#f1f2f3] cursor-pointer'>
+                Papers
             </a>
         </div>
     </div>
