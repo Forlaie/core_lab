@@ -23,6 +23,8 @@ import close_black from './close-black.png'
 import menu_black from './menu-black.png'
 import genericImg from './generic.png';
 import arrow_icon from './arrow-icon.png'
+import back_icon from './back_icon.png'
+import next_icon from './next_icon.png'
 
 import voiceex from './voiceex.png'
 import voiceex_pubs from '../Papers/Projects/voiceex_papers.json'
@@ -30,6 +32,9 @@ import copilotlens from './copilotlens.png'
 import copilotlens_pubs from '../Papers/Projects/copilotlens_papers.json'
 import arc from './arc.png'
 import arc_pubs from '../Papers/Projects/arc_papers.json'
+
+import poster1 from './ITiCSE_p1.png'
+import poster2 from './ITiCSE_p2.png'
 
 export const assets = {
     michael_pfp,
@@ -63,7 +68,12 @@ export const assets = {
     close_black,
     menu_black,
     genericImg,
-    arrow_icon
+    arrow_icon,
+    back_icon,
+    next_icon,
+
+    poster1,
+    poster2
 };
 
 export const art = [

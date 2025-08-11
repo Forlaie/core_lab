@@ -40,7 +40,7 @@ const Papers = () => {
   })
 
   return (
-    <section className="pr-30 pl-5 py-5">
+    <section id="publications" className="pr-30 pl-5 py-5">
       <h1 className="text-2xl font-semibold text-[#0b3a72] pb-2 border-b border-b-[#f1f2f3]">
         All Publications
       </h1>
@@ -53,7 +53,7 @@ const Papers = () => {
         </ul>
       ) : (
         sortedYears.map(year => (
-          <div key={year} id={year} className="scroll-mt-25">
+          <div key={year} className="scroll-mt-25">
             <div className="text-[20px] text-[#0a1588] font-semibold border-y border-y-[#0a1588] py-2">
               {year}
             </div>
