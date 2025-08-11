@@ -33,6 +33,7 @@ import copilotlens_pubs from '../Papers/Projects/copilotlens_papers.json'
 import arc from './arc.png'
 import arc_pubs from '../Papers/Projects/arc_papers.json'
 
+import poster_pubs from '../Papers/Posters/poster_papers.json'
 import poster1 from './ITiCSE_p1.png'
 import poster2 from './ITiCSE_p2.png'
 
@@ -72,6 +73,7 @@ export const assets = {
     back_icon,
     next_icon,
 
+    poster_pubs,
     poster1,
     poster2
 };
@@ -338,4 +340,23 @@ export const projectInfo = {
       description: "",
       publications: assets.voiceex_pubs
     }
+};
+
+export const posters = {
+  "10.1145_3724389.3730790":
+  {
+    conference: "ITiCSE 2025",
+    title: "Enhancing Self-Explanation in Student Learning through Large Language Models",
+    image: assets.poster1,
+    publication: assets.poster_pubs.find(p => p.doi === "10.1145/3724389.3730790"),
+    link: "/publications/10.1145_3724389.3730790"
+  },
+  "10.1145_3724389.3730767":
+  {
+    conference: "ITiCSE 2025",
+    title: "Self-Explanations: Does Timing Matter?",
+    image: assets.poster2,
+    publication: assets.poster_pubs.find(p => p.doi === "10.1145/3724389.3730767"),
+    link: "/publications/10.1145_3724389.3730767"
+  }
 };

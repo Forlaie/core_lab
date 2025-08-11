@@ -1,24 +1,19 @@
 "use client"
 
 import React, { useEffect, useState } from 'react'
-import { assets } from '@/Assets/assets'
+import { posters } from '@/Assets/assets'
 import Image from "next/image";
 import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from "react-icons/bs";
+import Link from 'next/link';
 
 const Posters = () => {
-
-    let slides = [
-        assets.poster1,
-        assets.poster2,
-        assets.poster1,
-        assets.poster2,
-    ]
+    let length = Object.keys(posters).length;
 
     let [current, setCurrent] = useState(0);
     
     let previousSlide = ()=>{
         if(current===0){
-            setCurrent(slides.length-1)
+            setCurrent(length-1)
         }
         else{
             setCurrent(current-1);
@@ -26,7 +21,7 @@ const Posters = () => {
     }
 
     let nextSlide = ()=>{
-        if(current===slides.length-1){
+        if(current===length-1){
             setCurrent(0)
         }
         else{
@@ -36,11 +31,11 @@ const Posters = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrent(prev => (prev === slides.length - 1 ? 0 : prev + 1));
+            setCurrent(prev => (prev === length - 1 ? 0 : prev + 1));
         }, 5000);
 
         return () => clearInterval(interval); // cleanup on unmount or when slides change
-    }, [slides.length]);
+    }, [length]);
 
   return (
     <div id="posters" className='py-10 pb-5 pr-30'>
@@ -57,16 +52,15 @@ const Posters = () => {
                 className={`flex transition ease-out duration-500`}
                 style={{ transform: `translateX(-${current * 100}%)` }}
                 >
-                {slides.map((s, index) => (
-                    <div
-                    key={index}
-                    className="flex-none w-full px-10 pt-5 pb-12 border border-gray-300 rounded-3xl duration-500 cursor-pointer"
-                    >
-                    <Image src={s} alt="poster" className="h-130 w-auto mb-3 mx-auto" />
-                    <p className="pt-3 text-[#0b3a72] border-t-2 border-t-[#0b3a72] hover:underline">
-                        <b>ITiCSE 2025 Poster</b> — Self-Explanations: Does Timing Matter?
-                    </p>
-                    </div>
+                {Object.values(posters).map((poster, index) => (
+                    <Link href={poster.link} key={index} className='flex-none w-full'>
+                        <div className="px-10 pt-5 pb-12 border border-gray-300 rounded-3xl duration-500 cursor-pointer">
+                        <Image src={poster.image} alt="poster" className="h-130 w-auto mb-3 mx-auto" />
+                        <p className="pt-3 text-[#0b3a72] border-t-2 border-t-[#0b3a72] hover:underline">
+                            <b>{poster.conference}</b> — {poster.title}
+                        </p>
+                        </div>
+                    </Link>
                 ))}
                 </div>
             </div>
@@ -76,7 +70,7 @@ const Posters = () => {
             </button>
 
             <div className='absolute bottom-0 py-4 flex justify-center gap-7 w-full'>
-                {slides.map((s, index)=>{
+                {Object.values(posters).map((poster, index)=>{
                     return (
                         <div key={index} className={`rounded-full w-3 h-3 cursor-pointer ${index===current? 'bg-gray-600' : 'bg-gray-300'}`} onClick={()=>{setCurrent(index)}}></div>
                     )
