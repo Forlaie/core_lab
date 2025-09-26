@@ -1,5 +1,5 @@
 import React from 'react'
-import Members from '@/Components/All_Team/Members';
+import Members from '@/Components/All_Team/Team';
 import Sidebar from '@/Components/All_Team/Sidebar';
 
 export default function Team() {

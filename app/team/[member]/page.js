@@ -1,4 +1,4 @@
-import Member from '@/Components/Publications/Member';
+import Member from '@/Components/All_Team/Member';
 import Sidebar from '@/Components/Publications/Sidebar';
 import React from 'react';
 
